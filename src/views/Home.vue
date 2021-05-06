@@ -1,5 +1,8 @@
 <template>
   <div>
+    <div>
+      <Menu />
+    </div>
     <Header />
     <div class="flex justify-center mt-4">
       <Logo />
@@ -12,7 +15,7 @@
     <div class="flex justify-center mt-4">
       <Button buttonLabel="Drink" />
     </div>
-    <div class="flex justify-center mt-2 animate-bounce">
+    <div class="flex justify-center mt-2 animate-bounce z-0">
       <ion-icon name="caret-down-outline" size="large"></ion-icon>
     </div>
   </div>
@@ -21,6 +24,7 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
+import Menu from "@/components/Menu.vue";
 import Header from "@/components/Header.vue";
 import Logo from "@/components/Logo.vue";
 import TextBox from "@/components/TextBox.vue";
@@ -29,6 +33,7 @@ import Button from "@/components/Button.vue";
 export default defineComponent({
   name: "Home",
   components: {
+    Menu,
     Header,
     Logo,
     TextBox,
